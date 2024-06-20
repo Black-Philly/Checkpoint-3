@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>White Eagle Tours</title>
+    <link href="style.css" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            padding-top: 56px; 
+            background-image: url(images/pattern.png); /* Adjust for fixed navbar height */
+        }
+        .hero-section {
+            height: 100vh;
+            background-size: cover;
+            background-position: center;
+            color: rgb(3, 4, 78);
+            text-shadow: 2px 2px 8px rgba(255, 255, 255, 0.973);
+        }
+        .footer {
+            background-color: #f8f9fa;
+            padding: 20px 0;
+        }
+        .social-icons i {
+            margin: 0 10px;
+            color: #333;
+            font-size: 24px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <a class="navbar-brand" href="#"><img src="images/WE_logo.png" alt="white eagle tours" width="250"></a>
+        <div class="container">
+            
+            <button class="navbar-toggler" type="button" 
+                    data-toggle="collapse" data-target="#navbarResponsive" 
+                    aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="nav nav-pills ml-auto align-items-center">
+                    <li class="nav-item m-3">
+                      <a class="nav-link active" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item m-3">
+                      <a class="nav-link active" href="#destinations">Destinations</a>
+                    </li>
+                    <li class="nav-item m-3">
+                      <a class="nav-link active" href="#tours">Tours</a>
+                    </li>
+                    <li class="nav-item m-3">
+                      <a class="nav-link active" href="#Contact">Contact</a>
+                    </li>
+                  </ul>
+
+                
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section d-flex align-items-center" style="background-image: url(images/for\ hero.jfif);">
+        <div class="container text-center">
+            <h1 class="display-4">Explore the World with Us</h1>
+            <p class="lead"><h2>Your adventure starts here</h2></p>
+            <a href="#destinations" class="btn btn-primary btn-lg">Discover More</a>
+        </div>
+    </section>
+
+    <!-- Destinations Section -->
+    <section id="destinations" class="py-5">
+        <div class="container">
+            <h2 class="text-center">Popular Destinations</h2>
+            <div class="row mt-4">
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img class="card-img-top" src="images/destination 1.jpg" alt="Destination 1" >
+                        <div class="card-body">
+                            <h5 class="card-title">Fiji Pacific island</h5>
+                            <p class="card-text">Fiji, officially the Republic of Fiji, is an island country in Melanesia, part of Oceania in the South Pacific Ocean. It lies about 1,100 nautical miles north-northeast of New Zealand.</p>
+                            <a href="#" class="btn btn-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img class="card-img-top" src="images/destination 2.jpg" alt="Destination 2" 400*300>
+                        <div class="card-body">
+                            <h5 class="card-title">Effiel Tower</h5>
+                            <p class="card-text">Eiffel Tower, wrought-iron structure in Paris that is among the most 
+                                famous landmarks in the world. It is also a technological masterpiece in building-
+                                construction history. </p>
+                            <a href="#" class="btn btn-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img class="card-img-top" src="images/destination 3.jfif" alt="Destination 3" 400*300>
+                        <div class="card-body">
+                            <h5 class="card-title">Temple of the Emerald Buddha</h5>
+                            <p class="card-text">Wat Phra Kaew, commonly known in English as the Temple of the Emerald Buddha and officially as Wat Phra Si Rattana Satsadaram, is regarded as the most sacred Buddhist temple in Thailand.</p>
+                            <a href="#" class="btn btn-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tours Section -->
+    <section id="tours" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center">Our Tours</h2>
+            <div class="accordion mt-4" id="toursAccordion">
+                <div class="card">
+                    <div class="card-header" id="tourOneHeading">
+                        <h2 class="mb-0">
+                            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#tourOne" aria-expanded="true" aria-controls="tourOne">
+                                Australia Vacation
+                            </button>
+                        </h2>
+                    </div>
+
+                    <div id="tourOne" class="collapse show" aria-labelledby="tourOneHeading" data-parent="#toursAccordion">
+                        <div class="card-body">
+                            Australia offers beautiful beaches, a wilderness that spans
+                             from the Outback to the rugged coast, and incredible dining
+                              and cultural opportunities in its cosmopolitan cities. 
+                              Snorkel or dive the Great Barrier Reef, the largest coral reef on the planet.
+                              On the coast, you’ll find the vibrant city of Sydney with its iconic Opera House, 
+                              and the seaside culture and turquoise water of Bondi Beach. Explore Australia’s
+                               wine regions, Daintree Rainforest, its breathtaking deserts, or meet a koala 
+                               and kangaroo in the city or wild. Go down under with a little help from your 
+                               Liberty Travel vacation consultant. 
+                            <p><a href="https://www.libertytravel.com/vacations/australia" class="btn btn-primary mt-2">View Details</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" id="tourTwoHeading">
+                        <h2 class="mb-0">
+                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#tourTwo" aria-expanded="false" aria-controls="tourTwo">
+                                Caribbean Vacation
+                            </button>
+                        </h2>
+                    </div>
+                    <div id="tourTwo" class="collapse show" aria-labelledby="tourTwoHeading" data-parent="#toursAccordion">
+                        <div class="card-body">
+                            Turquoise water, brilliant coral reefs, white-sand beaches, and sun-soaked adventures await you in 
+                            the Caribbean. From Latin beats to relaxing reggae, the cultures of the Caribbean are astonishingly
+                             diverse. Taste Creole flavors, delicious BBQ, and the fresh catch of the day. Learn to dance salsa,
+                              escape to a pirate cove, or unwind with yoga on the sand. Whether you’re looking for a remote island
+                               escape, an adults-only vacation, time with your family, or an all-inclusive resort, Liberty Travel’s 
+                               Caribbean vacation packages offer options for every style.
+                            <p><a href="https://www.libertytravel.com/vacations/caribbean" class="btn btn-primary mt-2">View Details</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" id="tourThreeHeading">
+                        <h2 class="mb-0">
+                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#tourThree" aria-expanded="false" aria-controls="tourThree">
+                                Discover South America
+                            </button>
+                        </h2>
+                    </div>
+                    <div id="tourThree" class="collapse show" aria-labelledby="tourThreeHeading" data-parent="#toursAccordion">
+                        <div class="card-body">
+                            Explore the diverse cultures, ancient history, and the natural beauty of South America with Liberty Travel.
+                             Visit the lost city of the Incas in Machu Picchu, trek into the Amazon, see Iguazú Falls, experience 
+                             Rio’s Carnival celebrations, marvel at Patagonia’s granite towers and glaciers, or travel to the Beagle
+                              Channel and Tierra del Fuego, the gateway to Antarctica. Journey to colonial cities where cathedrals sit
+                               on the ruins of ancient temples. Beautiful beaches, tango nights, and thrilling adventures await with 
+                               a Liberty Travel South America vacation package.
+                            <p><a href="#" class="btn btn-primary mt-2">View Details</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5">
+        <div class="container">
+            <h2 class="text-center">Contact Us</h2>
+            <div class="row justify-content-center mt-4">
+                <div class="col-md-6">
+                    <form>
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" class="form-control" id="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" class="form-control" id="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="destination">Destination of Interest</label>
+                            <input type="text" class="form-control" id="destination">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea class="form-control" id="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer text-center">
+        <div class="container">
+            <div class="social-icons mb-3">
+                <a href="#"><img src="images/facebook icon.png" alt="facebook"></a>
+                <a href="#"><img src="images/Xtwitter icon.png" alt="twitter"></a>
+                <a href="#"><img src="images/instagram icon.png" alt="instagram"></a>
+                <a href="#"><img src="images/linkedIn icon.png" alt="linkedIn"></a>
+            </div>
+            <p>&copy; 2024 White Eagle Tours. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
